@@ -154,6 +154,26 @@ let makeGlobalEnv () : Environment =
           "newline", ref (Function (function
               | [] -> printfn ""; Dummy "newline"
               | args -> malformed "newline" args))
+
+          "read-file", ref (Function (function
+              | [String path] -> String(System.IO.File.ReadAllText(path))
+              | args -> malformed "read-file" args))
+
+          "write-file", ref (Function (function
+              | [String path; String content] ->
+                  System.IO.File.WriteAllText(path, content)
+                  Dummy "write-file"
+              | args -> malformed "write-file" args))
+
+          "append-file", ref (Function (function
+              | [String path; String content] ->
+                  System.IO.File.AppendAllText(path, content)
+                  Dummy "append-file"
+              | args -> malformed "append-file" args))
+
+          "file-exists?", ref (Function (function
+              | [String path] -> if System.IO.File.Exists(path) then Number 1 else Number 0
+              | args -> malformed "file-exists?" args))
         ])]
 
 let interpret (exprs: Expression list) =
