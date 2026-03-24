@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linker>
+  <assembly fullname="FunLang">
+    <resource name="FSharpSignatureData.FunLang" action="remove"></resource>
+    <resource name="FSharpSignatureCompressedData.FunLang" action="remove"></resource>
+    <resource name="FSharpSignatureDataB.FunLang" action="remove"></resource>
+    <resource name="FSharpSignatureCompressedDataB.FunLang" action="remove"></resource>
+    <resource name="FSharpOptimizationData.FunLang" action="remove"></resource>
+    <resource name="FSharpOptimizationCompressedData.FunLang" action="remove"></resource>
+    <resource name="FSharpOptimizationDataB.FunLang" action="remove"></resource>
+    <resource name="FSharpOptimizationCompressedDataB.FunLang" action="remove"></resource>
+    <resource name="FSharpOptimizationInfo.FunLang" action="remove"></resource>
+    <resource name="FSharpSignatureInfo.FunLang" action="remove"></resource>
+  </assembly>
+</linker>

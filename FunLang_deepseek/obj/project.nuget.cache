@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "QP9Rfy1oJIk=",
+  "success": true,
+  "projectFilePath": "/Users/mk/compiler/FunLang/FunLang.fsproj",
+  "expectedPackageFiles": [
+    "/Users/mk/.nuget/packages/fparsec/1.1.1/fparsec.1.1.1.nupkg.sha512",
+    "/Users/mk/.nuget/packages/fsharp.core/10.1.201/fsharp.core.10.1.201.nupkg.sha512"
+  ],
+  "logs": []
+}
